@@ -50,20 +50,7 @@ import Layout from "../layouts/Layout.astro";
                 class="mt-8 flex items-center justify-center lg:justify-normal gap-x-5"
                 aria-label="Social media"
               >
-                {SOCIALS.map((social) => (
-                  <li class="text-xs p-2 rounded" data-ccursor>
-                    <a
-                      class="block hover:text-slate-200"
-                      href={social.url}
-                      target="_blank"
-                      rel="noreferrer noopener"
-                      aria-label={`${social.name} (opens in a new tab)`}
-                    >
-                      <span class="sr-only">{social.name}</span>
-                      {<Component component={social.icon} />}
-                    </a>
-                  </li>
-                ))}
+                
               </ul>
             )
           }
