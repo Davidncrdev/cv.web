@@ -1,0 +1,104 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Presupuesto para Esmeralda">
+  <div class="relative hero z-10">
+    <div class="mx-auto min-h-screen max-w-screen-2xl px-6 py-12 font-sans md:px-12 md:py-20 lg:px-24 lg:py-0">
+      <div class="lg:flex lg:justify-between lg:gap-4">
+        <header class="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:justify-between lg:py-24">
+          <div class="flex lg:items-start gap-4 flex-col lg:flex-row items-center text-center lg:text-left">
+            
+            <div>
+              <a href="/presupuesto" class="text-4xl lg:text-5xl block font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
+                <h1>David Kabre</h1>
+              </a>
+              <h2 class="mt-2 text-sm lg:text-lg font-medium text-neutral-400">
+                Desarrollo y marketing digital
+              </h2>
+            </div>
+          </div>
+        </header>
+
+        <main id="content" class="pt-24 lg:w-1/2 lg:py-24">
+          <section id="presupuesto" class="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24" aria-label="Presupuesto">
+            <div>
+              <h2 class="text-3xl font-bold text-neutral-100 mb-4">Presupuesto para Esmeralda</h2>
+              <p>
+                Ante todo, quiero felicitarte por el emocionante paso que estás dando al abrir tu propio local de baile en Málaga. Sin duda, este proyecto está cargado de pasión y dedicación, y me alegra ser parte de su desarrollo. Tu historia es inspiradora, y es un honor poder acompañarte en este nuevo capítulo, aportando mi experiencia para ayudarte a cumplir tus objetivos.
+              </p>
+
+              <h3 class="text-2xl font-semibold mt-8 mb-4">1. Desarrollo de página web personalizada</h3>
+              <p><strong>Objetivo:</strong> Crear una página web moderna, atractiva y funcional que refleje el espíritu de tu academia.</p>
+              <ul class="list-disc list-inside ml-6 mb-4">
+                <li>Diseño personalizado.</li>
+                <li>Estructura: página principal, sección sobre la academia, oferta de clases, galería de fotos, formulario de contacto, inscripción online y ubicación.</li>
+                <li>Optimización para móviles y velocidad de carga.</li>
+                <li>SEO Profesional.</li>
+                <li>Integración con redes sociales.</li>
+              </ul>
+              <p><strong>Precio:</strong> 797,5€ descuento del 45% = <strong>550€</strong></p>
+
+              <h3 class="text-2xl font-semibold mt-8 mb-4">2. Gestión completa de Google Maps</h3>
+              <p><strong>Objetivo:</strong> Posicionar tu academia en Google Maps para mejorar la visibilidad local.</p>
+              <ul class="list-disc list-inside ml-6 mb-4">
+                <li>Alta y verificación en Google My Business.</li>
+                <li>Optimización de la ficha.</li>
+                <li>Gestión de reseñas y actualizaciones periódicas.</li>
+              </ul>
+              <p><strong>Precio:</strong> 150€ descuento del 100% = <strong>0€</strong></p>
+
+              <h3 class="text-2xl font-semibold mt-8 mb-4">3. Diseño gráfico para flyers y anuncios</h3>
+              <p><strong>Objetivo:</strong> Crear material visual impactante para la promoción de tu academia.</p>
+              <ul class="list-disc list-inside ml-6 mb-4">
+                <li>Diseño de flyers para promoción impresa y digital.</li>
+                <li>Creación de banners publicitarios para redes sociales.</li>
+                <li>3 opciones de diseño con revisiones ilimitadas.</li>
+              </ul>
+              <p><strong>Precio:</strong> 50€ descuento del 100% = <strong>0€</strong></p>
+
+              <h3 class="text-2xl font-semibold mt-8 mb-4">4. Estrategia de marketing B2C y digital</h3>
+              <p><strong>Objetivo:</strong> Desarrollar una estrategia de marketing para atraer clientes.</p>
+              <ul class="list-disc list-inside ml-6 mb-4">
+                <li>Estrategia B2C para promociones y eventos.</li>
+                <li>Marketing digital con campañas en redes sociales.</li>
+                <li>Gestión de anuncios pagados durante 1 mes.</li>
+              </ul>
+              <p><strong>Precio:</strong> 500€ descuento del 100% = <strong>0€</strong></p>
+
+              <h3 class="text-xl font-semibold mt-8 mb-4">Total</h3>
+              <p><strong>550€</strong> por la página web + <strong>30€</strong> de mantenimiento mensual.</p>
+
+              <h3 class="text-xl font-semibold mt-8 mb-4">Tiempo de desarrollo</h3>
+              <p>El proyecto se completará en un plazo de 4 semanas.</p>
+
+              <h3 class="text-xl font-semibold mt-8 mb-4">Método de pago</h3>
+              <p>50% al inicio del proyecto y 50% al finalizar.</p>
+
+              <h3 class="text-xl font-semibold mt-8 mb-4">Agradecimiento</h3>
+              <p>
+                Esmeralda, agradezco mucho la confianza que has depositado en mí para llevar a cabo este proyecto. Estoy seguro de que juntos conseguiremos reflejar en tu página y en toda la estrategia de marketing la misma energía y pasión que has puesto en tu academia.
+              </p>
+              <p><strong>¡Te deseo muchísimo éxito!</strong></p>
+              <p><strong>David Nacro</strong></p>
+            </div>
+          </section>
+        </main>
+      </div>
+    </div>
+  </div>
+
+  <footer class="text-center py-4 text-xs">
+    {new Date().getFullYear()} ©2024 Fyve studio Media Pro S.L.U.
+  </footer>
+</Layout>
+
+<style scoped>
+  .hero {
+    background-image: url(/pattern.svg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    overflow-y: visible;
+    overflow-x: clip;
+  }
+</style>
