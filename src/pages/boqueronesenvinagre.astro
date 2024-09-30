@@ -1,0 +1,123 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Presupuesto para Boquerones en Vinagre">
+  <div class="relative hero z-10">
+    <div class="mx-auto min-h-screen max-w-screen-2xl px-6 py-12 font-sans md:px-12 md:py-20 lg:px-24 lg:py-0">
+      <div class="lg:flex lg:justify-between lg:gap-4">
+        <header class="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:justify-between lg:py-24">
+          <div class="flex lg:items-start gap-4 flex-col lg:flex-row items-center text-center lg:text-left">
+         
+            <div>
+              <a href="/boqueronesenvinagre" class="text-4xl lg:text-5xl block font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
+                <h1>David Nacro</h1>
+              </a>
+              <h2 class="mt-2 text-sm lg:text-lg font-medium text-neutral-400">
+                Estudio Altura creatiba - Servicios de sonido
+              </h2>
+            </div>
+          </div>
+        </header>
+
+        <main id="content" class="pt-24 lg:w-1/2 lg:py-24">
+          <section id="presupuesto" class="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24" aria-label="Presupuesto">
+            <div>
+              <h2 class="text-3xl font-bold text-neutral-100 mb-4">Presupuesto para Boquerones en Vinagre</h2>
+              <p>
+                Estimados integrantes de Boquerones en Vinagre,
+                <br />
+                Es un placer colaborar con vosotros y formar parte de vuestros próximos eventos. A continuación, detallo el presupuesto para los servicios de técnico de sonido, tanto para la sesión de ensayo como para el concierto.
+              </p>
+
+              <h3 class="text-2xl font-semibold mt-8 mb-4">1. Sesión de técnico de sonido en local de ensayo</h3>
+              <p><strong>Fecha:</strong> Miércoles, 2 de octubre</p>
+              <p><strong>Duración:</strong> 2 horas</p>
+              <p><strong>Incluye:</strong></p>
+              <ul class="list-disc list-inside ml-6 mb-4">
+                <li>Ajustes y pruebas técnicas de sonido en el local de ensayo.</li>
+                <li>Traslado al lugar de ensayo.</li>
+              </ul>
+              <p><strong>Precio total:</strong> 40€</p>
+
+              <h3 class="text-2xl font-semibold mt-8 mb-4">2. Sesión de técnico de sonido para el concierto</h3>
+              <p><strong>Fecha:</strong> Domingo, 5 de noviembre</p>
+              <p><strong>Duración:</strong> Durante todo el evento</p>
+              <p><strong>Incluye:</strong></p>
+              <ul class="list-disc list-inside ml-6 mb-4">
+                <li>Ajustes de sonido durante la preparación.</li>
+                <li>Supervisión técnica durante el concierto.</li>
+                <li>Posibles revisiones de sonido en tiempo real.</li>
+              </ul>
+              <p><strong>Precio:</strong> Entre 50€ y 60€ (según la duración y necesidades técnicas durante el concierto)</p>
+
+              <h3 class="text-xl font-semibold mt-8 mb-4">Resumen de costes</h3>
+              <table class="min-w-full bg-neutral-800 text-neutral-200">
+                <thead>
+                  <tr>
+                    <th class="px-4 py-2 text-left">Servicio</th>
+                    <th class="px-4 py-2 text-right">Precio (€)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="border-t border-neutral-700 px-4 py-2">Sesión de técnico de sonido en local de ensayo</td>
+                    <td class="border-t border-neutral-700 px-4 py-2 text-right">40</td>
+                  </tr>
+                  <tr>
+                    <td class="border-t border-neutral-700 px-4 py-2">Sesión de técnico de sonido para el concierto</td>
+                    <td class="border-t border-neutral-700 px-4 py-2 text-right">50-60</td>
+                  </tr>
+                  <tr>
+                    <td class="border-t border-neutral-700 px-4 py-2 font-bold">Total estimado</td>
+                    <td class="border-t border-neutral-700 px-4 py-2 text-right font-bold">90-100</td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <h3 class="text-xl font-semibold mt-8 mb-4">Condiciones</h3>
+              <ul class="list-disc list-inside ml-6 mb-4">
+                <li><strong>Método de pago:</strong> El pago se realizará al finalizar cada sesión.</li>
+                <li><strong>Condiciones adicionales:</strong> Cualquier modificación en el tiempo o en las necesidades técnicas se puede ajustar antes del evento o durante el mismo con previo aviso.</li>
+              </ul>
+
+              <h3 class="text-xl font-semibold mt-8 mb-4">Agradecimiento</h3>
+              <p>
+                Estoy encantado/a de poder ayudaros a que vuestro sonido esté a la altura de vuestra música, tanto en el ensayo como en el concierto. Espero que ambas sesiones sean un éxito y que podamos seguir colaborando en futuros eventos.
+              </p>
+              <p><strong>¡Nos vemos el 2 de octubre para empezar con la sesión en el local!</strong></p>
+              <p><strong>David Nacro</strong></p>
+            </div>
+          </section>
+        </main>
+      </div>
+    </div>
+  </div>
+
+  <footer class="text-center py-4 text-xs">
+    {new Date().getFullYear()} ©2024 Altura creativa S.L.U.
+  </footer>
+</Layout>
+
+<style scoped>
+  .hero {
+    background-image: url(/pattern.svg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    overflow-y: visible;
+    overflow-x: clip;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  th, td {
+    padding: 8px;
+  }
+  th {
+    background-color: #2D3748;
+  }
+  td {
+    background-color: #1A202C;
+  }
+</style>
