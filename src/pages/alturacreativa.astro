@@ -1,0 +1,63 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Altura Creativa">
+  <div class="relative hero z-10">
+    <div class="mx-auto min-h-screen max-w-screen-2xl px-6 py-12 font-sans md:px-12 md:py-20 lg:px-24 lg:py-0">
+      <div class="lg:flex lg:justify-between lg:gap-4">
+        <header class="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:justify-between lg:py-24">
+          <div class="flex lg:items-start gap-4 flex-col lg:flex-row items-center text-center lg:text-left">
+            <img src="/avatar.webp" alt="David Nacro" class="w-20 h-13" />
+            <div>
+              <a href="/presupuesto" class="text-4xl lg:text-5xl block font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
+                <h1>David Nacro</h1>
+              </a>
+              <h2 class="mt-2 text-sm lg:text-lg font-medium text-neutral-400">
+                cofundador y Director de Altura Creativa
+              </h2>
+            </div>
+          </div>
+        </header>
+
+        <main id="content" class="pt-24 lg:w-1/2 lg:py-24">
+          <section id="altura-creativa" class="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24" aria-label="Altura Creativa">
+            <div>
+              <h2 class="text-3xl font-bold text-neutral-100 mb-4">Altura Creativa</h2>
+              <p class="text-xl mb-6">Soluciones 360 en marketing, desarrollo web y mucho más</p>
+              
+              <p>
+                Mi nombre es David Nacro, fundador y director de <strong>Altura Creativa</strong>, una empresa dedicada a proporcionar soluciones integrales para empresas y proyectos que buscan crecer en el mundo digital. Con más de 3 años de experiencia en el desarrollo web y estrategias de marketing, nuestro enfoque 360° abarca desde marketing tradicional hasta marketing digital, diseño gráfico, y mucho más.
+              </p>
+
+              <p class="mt-4">
+                Como graduado de la prestigiosa escuela de programación <strong>42 Málaga</strong>, he adquirido una sólida formación en tecnología, lo que me permite ofrecer soluciones innovadoras y personalizadas a cada cliente. Además, con más de 5 años de experiencia en el mundo de la música y el sonido, profesionalizado en la <strong>Rockschool de Málaga</strong>, aplico la misma precisión y creatividad que caracteriza mi trayectoria musical a cada proyecto que realizamos.
+              </p>
+
+              <p class="mt-4">
+                En <strong>Altura Creativa</strong>, nos apasiona ayudar a las empresas a crecer y destacar, combinando tecnología, marketing y creatividad para crear soluciones completas que impulsen su éxito. Ya sea que necesites una estrategia de marketing, una página web a medida o asesoría digital, estamos aquí para acompañarte en cada paso.
+              </p>
+            </div>
+          </section>
+        </main>
+      </div>
+    </div>
+  </div>
+
+  <footer class="text-center py-4 text-xs">
+    {new Date().getFullYear()} ©2024 Altura creativa.
+  </footer>
+</Layout>
+
+<style scoped>
+  .hero {
+    background-image: url(/pattern.svg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    overflow-y: visible;
+    overflow-x: clip;
+  }
+  p {
+    color: #CBD5E0;
+  }
+</style>

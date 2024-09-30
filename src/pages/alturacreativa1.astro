@@ -1,0 +1,63 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="David Nacro - Sonido y Música Profesional">
+  <div class="relative hero z-10">
+    <div class="mx-auto min-h-screen max-w-screen-2xl px-6 py-12 font-sans md:px-12 md:py-20 lg:px-24 lg:py-0">
+      <div class="lg:flex lg:justify-between lg:gap-4">
+        <header class="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:justify-between lg:py-24">
+          <div class="flex lg:items-start gap-4 flex-col lg:flex-row items-center text-center lg:text-left">
+            <img src="/avatar.webp" alt="David Nacro" class="w-20 h-13" />
+            <div>
+              <a href="/boqueronesenvinagre" class="text-4xl lg:text-5xl block font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
+                <h1>David Nacro</h1>
+              </a>
+              <h2 class="mt-2 text-sm lg:text-lg font-medium text-neutral-400">
+                Sonido y Música Profesional
+              </h2>
+            </div>
+          </div>
+        </header>
+
+        <main id="content" class="pt-24 lg:w-1/2 lg:py-24">
+          <section id="sonido-musica" class="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24" aria-label="Sonido y Música">
+            <div>
+              <h2 class="text-3xl font-bold text-neutral-100 mb-4">David Nacro - Sonido y Música Profesional</h2>
+              <p class="text-xl mb-6">Pasión por el sonido, precisión en cada nota</p>
+              
+              <p>
+                Soy David Nacro, músico y técnico de sonido con más de 5 años de experiencia profesional. Mi carrera musical comenzó en la prestigiosa <strong>Rockschool de Málaga</strong>, donde me formé y perfeccioné mis habilidades en diversas áreas de la música, tanto en interpretación como en producción. A lo largo de mi trayectoria, he trabajado con diversos artistas y grupos, ayudándoles a crear experiencias sonoras inolvidables tanto en estudio como en vivo.
+              </p>
+
+              <p class="mt-4">
+                Además de mi carrera como músico, también soy un profesional del sonido. Ofrezco servicios técnicos para conciertos, grabaciones y eventos, asegurando siempre la mejor calidad de audio. Mi enfoque no solo es técnico, sino también artístico, lo que me permite entender las necesidades musicales de cada proyecto y llevarlas a su máximo potencial.
+              </p>
+
+              <p class="mt-4">
+                En <strong>Altura Creativa</strong>, combino mi pasión por la música con mi experiencia en sonido, brindando un servicio integral para artistas y bandas que buscan una calidad sonora impecable y un enfoque creativo en cada sesión. Ya sea para la producción de un álbum, la realización de un concierto o el ajuste técnico en un ensayo, mi objetivo es siempre el mismo: hacer que el sonido transmita la energía y emoción que merece.
+              </p>
+            </div>
+          </section>
+        </main>
+      </div>
+    </div>
+  </div>
+
+  <footer class="text-center py-4 text-xs">
+    {new Date().getFullYear()} ©2024 Altura creativa.
+  </footer>
+</Layout>
+
+<style scoped>
+  .hero {
+    background-image: url(/pattern.svg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    overflow-y: visible;
+    overflow-x: clip;
+  }
+  p {
+    color: #CBD5E0;
+  }
+</style>
