@@ -1,0 +1,78 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Presupuesto para [Nombre del Cliente]">
+  <div class="relative hero z-10">
+    <div class="mx-auto min-h-screen max-w-screen-2xl px-6 py-12 font-sans md:px-12 md:py-20 lg:px-24 lg:py-0">
+      <div class="lg:flex lg:justify-between lg:gap-4">
+        <header class="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:justify-between lg:py-24">
+          <div class="flex lg:items-start gap-4 flex-col lg:flex-row items-center text-center lg:text-left">
+            
+            <div>
+              <a href="" class="text-4xl lg:text-5xl block font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
+                <h1>Nicolas Aravena</h1>
+              </a>
+              <h2 class="mt-2 text-sm lg:text-lg font-medium text-neutral-400">
+                Fyve studio pro
+              </h2>
+            </div>
+          </div>
+        </header>
+
+        <main id="content" class="pt-24 lg:w-1/2 lg:py-24">
+          <section id="presupuesto" class="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24" aria-label="Presupuesto">
+            <div>
+              <h2 class="text-3xl font-bold text-neutral-100 mb-4">Presupuesto de cambio de amplificador</h2>
+              <p>
+                Queremos agradecerte la oportunidad de colaborar en este proyecto. A continuación, te presentamos el detalle del presupuesto para el suministro y la instalación del nuevo amplificador de sonido en la mezquita. Nuestro objetivo es asegurar que la calidad del sonido sea óptima y cumpla con tus expectativas.
+              </p>
+
+              <h3 class="text-2xl font-semibold mt-8 mb-4">1. Suministro de nuevo amplificador de sonido</h3>
+              <p><strong>Modelo:</strong> the t.racks DSP 4x4 Mini Amp</p>
+              <p><strong>Precio del equipo:</strong> <strong>195€</strong></p>
+
+              <h3 class="text-2xl font-semibold mt-8 mb-4">2. Honorarios por instalación y configuración</h3>
+              <p><strong>Descripción del servicio:</strong> Retiro del amplificador antiguo, instalación y configuración del nuevo amplificador para asegurar su óptimo funcionamiento.</p>
+              <p><strong>Precio del servicio:</strong> <strong>400€</strong></p>
+
+              <h3 class="text-xl font-semibold mt-8 mb-4">Resumen de costes</h3>
+              <ul class="list-disc list-inside ml-6 mb-4">
+                <li><strong>Suministro del nuevo amplificador:</strong> 195€</li>
+                <li><strong>Honorarios de instalación:</strong> 400€</li>
+                <li><strong>Descuento promocional octubre 2024:</strong> 15%</li>
+              </ul>
+              <p><strong>Total:</strong> <strong>500€</strong></p>
+
+              <h3 class="text-xl font-semibold mt-8 mb-4">Condiciones</h3>
+              <p><strong>Tiempo de ejecución:</strong> La instalación y configuración se realizarán en un plazo de 1 a 2 días hábiles tras la confirmación del presupuesto.</p>
+              <p><strong>Método de pago:</strong> 50% inicial al comenzar el trabajo y 50% restante tras la finalización.</p>
+              <p><strong>Garantía:</strong> El equipo cuenta con una garantía del fabricante de 2 años, y ofrecemos soporte durante el primer mes tras la instalación.</p>
+
+              <h3 class="text-xl font-semibold mt-8 mb-4">Agradecimiento</h3>
+              <p>
+                Agradecemos tu confianza en nuestros servicios. Nos comprometemos a realizar el cambio del amplificador de sonido de manera rápida y eficiente, garantizando que la calidad del sonido en la mezquita quede completamente optimizada.
+              </p>
+              <p><strong>¡Muchas gracias!</strong></p>
+              <p><strong>Nicolas Arravena</strong></p>
+            </div>
+          </section>
+        </main>
+      </div>
+    </div>
+  </div>
+
+  <footer class="text-center py-4 text-xs">
+    {new Date().getFullYear()} ©2024 Fyve studio pro 
+  </footer>
+</Layout>
+
+<style scoped>
+  .hero {
+    background-image: url(/pattern.svg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    overflow-y: visible;
+    overflow-x: clip;
+  }
+</style>
